@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* ############  Header | Navbar ############ */
+.site-header {
+    background-color: #fff;
+    overflow: auto;
+}
+
+.site-header img {
+    float: left;
+}
+
+.site-title {
+    display: block;
+    padding-top: 1em;
+    padding-left: 50px;
+    font-size: 32px;
+    overflow: auto;
+}
+
+.site-slogan {
+    display: block;
+    padding-left: 50px;
+    font-style: italic;
+    overflow: auto;
+}
+
+.site-header {
+    padding-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0.5rem;
+    text-align: center;
+}
+
+
+
+/* ############  Aside  ############ */
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav > ul > li {
+    margin-bottom: 0.4rem;
+    list-style: none;
+}
+
+nav > ul > li a {
+    padding: 0.2rem;
+    margin: 0.2rem;
+    text-decoration: none;
+    line-height: 160%;
+}
+
+.selected {
+    border: 1px solid #ccc;
+    background: black;
+    color: white;
+}
+
+/* ############ Main section ############ */
+.me {
+    width: 400px;
+}
+
+main {
+    min-height: 30em;
+}
+
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 980px;
+    border-radius: 10px;
+}
+
+.wrap-main > main {
+    padding: 0.5rem;
+    float: left;
+    width: 70%;
+}
+
+
+#right-section {
+    overflow: hidden;
+}
+
+
+article > section {
+    padding: 1rem;
+}
+
+section > p {
+    margin: 1rem;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+table th {
+    background: lightgreen;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.4rem;
+}
+
+
+/* ############ Footer ############ */
+
+footer {
+    text-align: center;
+    margin-bottom: 1rem;
+    clear: both;
+    padding-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+}
+
