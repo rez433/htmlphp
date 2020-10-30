@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* ############  Header | Navbar ############ */
+.site-header {
+    background-color: #fff;
+    overflow: auto;
+}
+
+.site-header img {
+    float: left;
+}
+
+.site-title {
+    display: block;
+    padding-top: 1em;
+    padding-left: 50px;
+    font-size: 32px;
+    overflow: auto;
+}
+
+.site-slogan {
+    display: block;
+    padding-left: 50px;
+    font-style: italic;
+    overflow: auto;
+}
+
+.navbar {
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+}
+
+.navbar a {
+    margin-right: 0.4rem;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border: 1px solid #ccc;
+}
+
+.navbar a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.navbar a:active {
+    background: orangered;
+}
+
+/* .navbar .selected {
+    background: #ccc;
+    padding: 0.4rem 3rem;
+    display: inline;
+} */
+
+.site-header {
+    padding-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0.5rem;
+    text-align: center;
+}
+
+.author {
+    font-size: 0.8rem;
+    font-style: italic;
+    background: rgb(168, 243, 133);
+    padding: 0.3rem;
+    max-width: 210px;
+}
+
+/* ############  Aside  ############ */
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav > ul > li {
+    margin-bottom: 0.4rem;
+    list-style: none;
+}
+
+nav > ul > li a {
+    padding: 0.2rem;
+    margin: 0.2rem;
+    text-decoration: none;
+    line-height: 160%;
+}
+
+.selected {
+    border: 1px solid #ccc;
+    background: black;
+    color: white;
+}
+
+/* ############ Main section ############ */
+.me {
+    width: 400px;
+}
+
+main {
+    min-height: 30em;
+}
+
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 980px;
+    border-radius: 10px;
+}
+
+.wrap-main > main {
+    padding: 0.5rem;
+    float: left;
+    width: 70%;
+}
+
+main article > p::first-letter,
+section > p::first-letter {
+    color: #c69c6d;
+    float: left;
+    font-size: 3rem;
+    margin: 0 0.2em 0 0;
+}
+
+main article figure > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-image {
+    width: 400px;
+    padding: 1rem;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin: auto;
+}
+
+#right-section {
+    overflow: hidden;
+}
+
+.byline {
+    margin-top: 3rem;
+}
+
+article > figure,
+.right-image {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 10px 5px 5px rgb(63, 49, 49);
+}
+
+article > section {
+    padding: 1rem;
+}
+
+section > p {
+    margin: 1rem;
+}
+
+/* ############ Footer ############ */
+#byline {
+    margin: 5rem 0;
+    border-bottom: 1px dashed #ccc;
+    border-top: 1px dashed #ccc;
+    height: auto;
+}
+
+#byline > figure > img {
+    float: right;
+    width: 80px;
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+#byline > p {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: rgb(116, 114, 114);
+    font-size: 12px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 1rem;
+    clear: both;
+    padding-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+}
+
+/* ############ media query ############ */
+@media only screen and (max-width: 599px) {
+    #byline {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    #byline p {
+        margin-top: 1rem;
+    }
+
+    footer ul {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    article > figure,
+    .right-image {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
